@@ -22,4 +22,4 @@ The tool will then generate `-count` words using the `CONFIG.word` pattern. If t
 pattern (ex. word made from syllables which are in turn made from consonants and vowels), extra intermediate
 productions can be specified and referenced as `$production`.
 
-See the [example config](./test.toml) for further info.
+See the [example config](./example.toml) for further info.

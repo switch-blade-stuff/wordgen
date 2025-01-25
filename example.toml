@@ -1,0 +1,7 @@
+name = "Example language"
+word = "$syllable{1,4}"   # Word is made of 1 to 4 syllables
+
+[productions]
+syllable = "$c?$v$c" # Syllable starting with an optional consonant, followed by a vowel and a consonant
+c = "[btrklnmj]"     # Alt-group of consonants
+v = "[aäoiu]"        # Alt-group of vowels

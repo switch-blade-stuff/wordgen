@@ -1,0 +1,20 @@
+name = "Example language"
+
+# Word is made from a root surrounded with an optional prefix and suffix
+word = "$prefix?$root$suffix?"
+
+[productions]
+# Prefix takes form of CV and can have consonants t, d, k; and vowels a, u
+prefix = "$prefixC$prefixV"
+prefixC = "[tdk]"
+prefixV = "[au]"
+
+# Suffix takes form of VC and can have consonants j, z; and vowels i, u
+suffix = "$suffixV$suffixC"
+suffixC = "[jz]"
+suffixV = "[iu]"
+
+# Root takes form of CVC and can have consonants b, k, d, t, r; and vowels a, o, i, u
+root = "$rootC$rootV$rootC"
+rootC = "[bkdtr]"
+rootV = "[aoiu]"
